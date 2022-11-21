@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My-webpage</title>
+    <nav class="navbar navbar-light bg-info">
+        <div class="container-fluid" style="background-color: skyblue;">
+            <h1 style="color:rgb(186, 61, 184)">!Exchange Not Connected</h1>
+            <h1 style="color:rgb(45, 48, 42)">Trial Subscription - 7 more days left</h1>
+            <div class="d-flex" >
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Renew Subscription
+                </button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Bitcoin',     11],
+          ['Ethereum',      2],
+          ['Monero',  2],
+          
+        ]);
+
+        var options = {
+          title: 'Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+    </script>
+    </head>
+
+    <body>
+        <div id="wrapper-div">
+        <div id="Navigation-div" class="clearfix">
+             <div class="nav">Balance &nbsp;&nbsp;&nbsp; $25,2000.97 <br>
+             Invested &nbsp;&nbsp;&nbsp; $10,458.00   <br>
+             %profit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  +60% <br>
+             USD Profit &nbsp;&nbsp;&nbsp;  $15,648.3 <br>
+             <button type="button" class="btn btn-primary" >Add Exchange
+            </button>
+
+             </div>
+             <div class="nav"> 
+             <div id="piechart" style="width: 400px; height: 200px;"></div>
+              Bitcoin  <br>$11,560.77<br>
+              Ethereum <br>$5,583.23<br>
+              Monero   <br>$8,050.97
+             </div>
+        </div>
+
+        <div id="boxes-div" class="clearfix">
+
+        <div class="box">&nbsp;&nbsp;&nbsp;&nbsp; Portfolio&nbsp;&nbsp;1 
+            <img src="C:\Users\paddy\Desktop\VerficientTech\imag1.jpg" height="200px" width="200px"alt="img1"/>&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;&nbsp;3.7%
+        </div>
+
+        <div class="box">&nbsp;&nbsp Portfolio &nbsp;&nbsp;2 
+              <img src="C:\Users\paddy\Desktop\VerficientTech\imag1.jpg" height="200px" width="200px"alt="img1"/>&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;&nbsp;3.7%
+        </div>
+    
+        <div class="box">&nbsp;&nbsp Portfolio &nbsp;&nbsp;3
+              <img src="C:\Users\paddy\Desktop\VerficientTech\imag1.jpg" height="200px" width="200px"alt="img1"/>&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;&nbsp;3.7%
+        </div>
+              
+
+         </div>
+
+        <div id="main-div" class="clearfix">
+            <div id="sidebar-div">Transaction
+        
+            <button type="button" class="btn btn-primary" > see all
+            </button>
+            </div>
+            <div id="bodyarea-div">Chart 
+            <img class="imgs" src="C:\Users\paddy\Desktop\VerficientTech\img11.jpg" height="100px" width="100px"alt="img1"/>
+            </div>
+            
+        </div>
+     
+        
+        </div>
+    </body>
+
+
+</html>
